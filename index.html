@@ -6,32 +6,49 @@
         <meta name="author" content="Moritz Humboldt">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AirSea&Me 🌊</title>
+        <title>AirSea&Me</title>
         <link href="styles/main.css" rel="stylesheet">
+        <link href="/assets/fontawesome/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
+
+        <script src="https://kit.fontawesome.com/dab054fcf1.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <div class="navbar">
+            <div>
                 <nav>
-                    <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="index.html"><i class="fa-solid fa-plane"></i></a></li>
+                        <li class="list-item"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                        <li class="list-item"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Suche</a></li>
+                        <li class="list-item"><a href="#">Test</a></li>
+                        <li class="list-item"><a href="#"><i class="fa-solid fa-user"></i>Login</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+            <div class="columns">
+                <div class="col">
+                    <h1>Discover</h1>
+                </div>
             </div>
-            <button><a href="search.html">Suche</a></button>
         </main>
-        
+
         <footer>
-            <p>Impressum</p>
+            <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </footer>
     </body>
 </html>

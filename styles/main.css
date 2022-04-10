@@ -1,4 +1,127 @@
-.btn-basic {
+html{
+    min-height: 100%;
+    background-image: url('/assets/ocean_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 1em;
+    padding: 0;
+    font-size: 18px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:  1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(67, 90, 94, 0.308);
     border-radius: 4px;
-    font-size: 20px;
+}
+
+.nav-list list-item{
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1em;
+}
+
+nav a:hover,
+nav a:focus{
+    text-decoration: underline;
+    background-color: rgb(5, 121, 237);
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+.border-solid{
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.columns{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px;
+    background-color: aliceblue;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 4px;
+}
+
+@media (min-width: 600px){
+    .columns{
+        flex-direction: row;
+    }
+}
+
+.columns > * {
+    width: 100%;
+}
+
+footer{
+    background-color: rgba(67, 90, 94, 0.308);
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer-nav{
+    list-style: none;
+    bottom: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    padding: 0.3em;
+}
+
+.footer-nav a{
+    text-decoration: none;
+}
+
+a.btn{
+    display:block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align:center;
+    transition: all 0.3s;
+    color: black;
+    background-color: rgb(7, 119, 217);
+    }
+
+a.btn:hover{
+border-color: rgb(0, 0, 0);
+}
+
+a.btn:active{
+    background-color: rgb(11, 60, 103);
+    transform: translateY(0.3em);
+}
+
+.centered{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5em;
 }
