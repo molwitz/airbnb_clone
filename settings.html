@@ -21,38 +21,7 @@
     </head>
 
     <body>
-        <div id="login">
-            <div class="exit_btn">
-                <a onclick="toggleLogin()" href="#"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-            
-            <div class="columns">
-                <div class="col">
-                    <label>Vorname</label>
-                    <input type="text" name="firstName" id="firstName">
-                </div>
-                <div class="col">
-                    <label>Nachname</label>
-                    <input type="text" name="lastName" id="lastName">
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="col">
-                    <label>Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="col">
-                    <label>Passwort</label>
-                    <input type="password" name="password" id="password">
-                </div>        
-            </div>
-
-            <div class="centered">
-                <a href="#" class="btn" onclick="createUser()">Registrieren</a>
-            </div>
-
-        </div>
+        
         <header>
             <div>
                 <nav>
@@ -60,8 +29,13 @@
                         <li class="list-item"><a href="index.html"><i class="fa-solid fa-plane"></i></a></li>
                         <li class="list-item"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
                         <li class="list-item"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Suche</a></li>
+                        
+                        <li class="list-item dropdown_profile"><a href="#"><i class="fa-solid fa-user"></i>Mein Profil</a>
+                            <div class="dropdown-content">
+                                <a href="#">Meine Unterkünfte</a>
+                              </div>
+                        </li>
                         <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
-                        <li class="list-item" onclick="toggleLogin()"><a href="#"><i class="fa-solid fa-user"></i>Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -71,7 +45,34 @@
         <main>
             <div class="columns">
                 <div class="col">
-                    <h1 class="centered">Discover</h1>
+                    <h1 class="centered">Profil bearbeiten</h1>
+                        
+                        <div class="columns">
+                            <div class="col">
+                                <label>Vorname</label>
+                                <input type="text" name="firstName" id="editFirstName">
+                            </div>
+                            <div class="col">
+                                <label>Nachname</label>
+                                <input type="text" name="lastName" id="editLastName">
+                            </div>
+                        </div>
+            
+                        <div class="columns">
+                            <div class="col">
+                                <label>Email</label>
+                                <input type="email" name="email" id="editEmail">
+                            </div>
+                            <div class="col">
+                                <label>Passwort</label>
+                                <input type="password" name="password" id="editPassword">
+                            </div>        
+                        </div>
+            
+                        <div class="centered">
+                            <a href="#" id="editUser" class="btn">Speichern</a>
+                        </div>
+
                 </div>
             </div>
 

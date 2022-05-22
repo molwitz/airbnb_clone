@@ -17,18 +17,51 @@
         <link rel="manifest" href="/assets/site.webmanifest">
 
         <script src="https://kit.fontawesome.com/dab054fcf1.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js" defer></script>
     </head>
 
     <body>
+        <div id="login">
+            <div class="exit_btn">
+                <a onclick="toggleLogin()" href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            
+            <div class="columns">
+                <div class="col">
+                    <label>Vorname</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+                <div class="col">
+                    <label>Nachname</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="col">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="col">
+                    <label>Passwort</label>
+                    <input type="password" name="password" id="password">
+                </div>        
+            </div>
+
+            <div class="centered">
+                <a href="#" class="btn" onclick="createUser()">Registrieren</a>
+            </div>
+
+        </div>
         <header>
             <div>
                 <nav>
                     <ul class="nav-list">
-                        <li class="list-item"><a href="#"><i class="fa-solid fa-plane"></i></a></li>
+                        <li class="list-item"><a href="index.html"><i class="fa-solid fa-plane"></i></a></li>
                         <li class="list-item"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
                         <li class="list-item"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Suche</a></li>
-                        <li class="list-item"><a href="#">Test</a></li>
-                        <li class="list-item"><a href="#"><i class="fa-solid fa-user"></i>Login</a></li>
+                        <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                        <li class="list-item" onclick="toggleLogin()"><a href="#"><i class="fa-solid fa-user"></i>Login</a></li>
                     </ul>
                 </nav>
             </div>

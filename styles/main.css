@@ -151,3 +151,37 @@ a.btn:active{
 .login_box{
     padding: 1em;
 }
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    transition: 1s ease;
+    position: absolute;
+}
+
+.sidebar_collapsed{
+    width: 0%;
+
+}
+
+.exit_btn{
+    float: right;
+    padding: 1em;
+}
+
+.dropdown_profile{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 150px;
+}
+
+.dropdown_profile:hover .dropdown-content {
+    display: block;
+}
