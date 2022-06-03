@@ -1,3 +1,6 @@
+document.getElementById("toggleLogin").addEventListener("click", toggleLogin);
+document.getElementById("closeLogin").addEventListener("click", toggleLogin);
+
 function toggleLogin() {
     let popup = document.getElementById("login");
 
@@ -13,7 +16,30 @@ function toggleLogin() {
     }
 }
 
+document.getElementById("btnLogin").addEventListener("click", login);
+
+function login() {
+    let email = document.getElementById("login-user").value;
+    let password = document.getElementById("login-pw").value;
+
+    const re = /\S+@\S+\.\S+/;
+
+    let userLogin = {email: email, password: password};
+    if (re.test(userLogin.email) === false) {
+        alert("Keine gültige Email Adresse");
+    } else {
+        sendJSONObjectWithPOST(
+            "http://127.0.0.1:3000/",
+            JSON.stringify(userLogin)
+        );
+    }
+}
+
+// eslint-disable-next-line no-unused-vars
+document.getElementById("btnRegister").addEventListener("click", createUser);
+
 function createUser() {
+    alert("clickREGISTER");
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let email = document.getElementById("email").value;
@@ -32,7 +58,11 @@ function createUser() {
     } else if ( pwLength < 7) {
         alert("Passwort zu kurz");
     } else {
-        localStorage.setItem("user", JSON.stringify(user));
+        sendJSONObjectWithPOST(
+            "http://127.0.0.1:3000/",
+            JSON.stringify(user)
+        );
+        // localStorage.setItem("user", JSON.stringify(user));
     }
 }
 
@@ -76,3 +106,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
+async function sendJSONObjectWithPOST(url, jsonObject) {
+    const response = await fetch(url, {
+      method: 'post',
+      body: jsonObject,
+    });
+  };

@@ -18,40 +18,68 @@
 
         <script src="https://kit.fontawesome.com/dab054fcf1.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js" defer></script>
+        <script src="js/server.js" defer></script>
     </head>
 
     <body>
         <div id="login">
-            <div class="exit_btn">
-                <a onclick="toggleLogin()" href="#"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-            
-            <div class="columns">
-                <div class="col">
-                    <label>Vorname</label>
-                    <input type="text" name="firstName" id="firstName">
-                </div>
-                <div class="col">
-                    <label>Nachname</label>
-                    <input type="text" name="lastName" id="lastName">
-                </div>
-            </div>
+            <div class="login-content">
+                <ul class="tab-list">
+                    <li class="tab-link"> 
+                        <a href="#tab-login"><span class="tab-header">Login</span></a>
+                    </li>
+                    <li class="tab-link"> 
+                        <a href="#tab-register"><span class="tab-header">Registrieren</span></a>
+                    </li>
 
-            <div class="columns">
-                <div class="col">
-                    <label>Email</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="col">
-                    <label>Passwort</label>
-                    <input type="password" name="password" id="password">
-                </div>        
-            </div>
+                    <li class="tab-link exit_btn" id="closeLogin">
+                        <span class="tab-header"><i class="fa-solid fa-xmark"></i></span>
+                    </li>
+                </ul>
+                <div class="tabs">
+                    <div class="tab" id="tab-login">
+                        <div class="centered tab-col">
+                            <label>Email</label>
+                            <input type="email" name="email" id="login-user">
+                        </div>
+                        <div class="centered tab-col">
+                            <label>Passwort</label>
+                            <input type="password" name="password" id="login-pw">
+                        </div>
 
-            <div class="centered">
-                <a href="#" class="btn" onclick="createUser()">Registrieren</a>
-            </div>
+                        <div class="tab-col centered">
+                            <a href="#" class="btn btn-primary" id="btnLogin">Login</a>
+                        </div>
+                            
+                    </div>
+                    
+                    <div class="tab" id="tab-register">
+                        <div class="tab-row">
+                            <div class="centered tab-col">
+                                <label>Vorname</label>
+                                <input type="text" name="firstName" id="firstName">
+    
+                                <label>Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
 
+                            <div class="centered tab-col">
+                                <label>Nachname</label>
+                                <input type="text" name="lastName" id="lastName">
+    
+                                <label>Passwort</label>
+                                <input type="password" name="password" id="password">
+                            </div>
+                        </div>
+
+                        <div class="tab-row">
+                            <div class="tab-col centered">
+                                <a href="#" class="btn btn-primary" id="btnRegister">Registrieren</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
         </div>
         <header>
             <div>
@@ -61,7 +89,7 @@
                         <li class="list-item"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
                         <li class="list-item"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Suche</a></li>
                         <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
-                        <li class="list-item" onclick="toggleLogin()"><a href="#"><i class="fa-solid fa-user"></i>Login</a></li>
+                        <li class="list-item" id="toggleLogin"><a href="#"><i class="fa-solid fa-user"></i>Login</a></li>
                     </ul>
                 </nav>
             </div>
