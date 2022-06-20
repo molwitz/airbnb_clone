@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="AirBnB Clone">
+        <meta name="author" content="Moritz Humboldt">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AirSea&Me</title>
+        <link href="styles/main.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
+
+        <script src="https://kit.fontawesome.com/dab054fcf1.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="index.html"><i class="fa-solid fa-plane"></i></a></li>
+                        <li class="list-item"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                        <li class="list-item"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Suche</a></li>
+                        <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                        <li class="list-item dropdown_profile"><a href="#"><i class="fa-solid fa-user"></i>Mein Profil</a>
+                            <div class="dropdown-content">
+                                <a href="listings.html">Meine Unterkünfte</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <div>
+                <div class="columns">
+                    <div class="col">
+                        <h1 class="centered">Neue Unterkunft:</h1>
+
+                        <div>
+                            <form method="get" action="">
+                                <div class="columns">
+                                    <div class="col">
+                                        <label>Titel</label>
+                                        <input type="text" name="title" id="title" value="">
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Nachname</label>
+                                        <select name="persons" id="persons">
+                                                <option value="">Maximale Personen angeben</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Stadt</label>
+                                        <select name="city" id="city">
+                                            <option value="">Stadt auswählen</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="columns">
+                                    <div class="col">
+                                        <label>Titel</label>
+                                        <input type="text" name="title" id="title" value="">
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Nachname</label>
+                                        <select name="persons" id="persons">
+                                                <option value="">Maximale Personen angeben</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Stadt</label>
+                                        <select name="city" id="city">
+                                            <option value="">Stadt auswählen</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <button type="btn-primary submit">Speichern</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                
+                
+            </div>
+        </main>
+    </body>
+
+</html>

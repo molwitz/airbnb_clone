@@ -14,7 +14,6 @@ body{
     font-size: 18px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
     min-height: 100vh;
     position: relative;
 }
@@ -240,4 +239,25 @@ a.btn:active{
 
 .exit_btn{
     float: right;
+}
+
+.icon{
+    float: right;
+    position: relative;
+    font-size: 2em;
+    background-color: rgb(7, 119, 217);
+    border-radius: 4px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+a .icon{
+    text-decoration: none;
+    color: black;
+}
+
+.label{
+    padding-right: 1em;
 }

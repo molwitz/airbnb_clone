@@ -31,7 +31,7 @@
                         <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
                         <li class="list-item dropdown_profile"><a href="#"><i class="fa-solid fa-user"></i>Mein Profil</a>
                             <div class="dropdown-content">
-                                <a href="#">Meine Unterkünfte</a>
+                                <a href="listings.html">Meine Unterkünfte</a>
                             </div>
                         </li>
                     </ul>
@@ -41,13 +41,22 @@
         </header>
 
         <main>
-
             <div>
-                <form method="get" action="/listings/load">
-                    
-                </form>
-            </div>
+                <div class="columns">
+                    <div class="col">
+                        <a href="addListing.html"><i class="icon fa-solid fa-plus"></i></a>
+                        <h1 class="centered">Meine Unterkünfte</h1>
+                        
+                    </div>
+                </div>
 
+                
+                <div>
+                    <form method="get" action="/listings/load">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
         </main>
     </body>
 
