@@ -21,7 +21,6 @@
     </head>
 
     <body>
-        
         <header>
             <div>
                 <nav>
@@ -29,13 +28,12 @@
                         <li class="list-item"><a href="index.html"><i class="fa-solid fa-plane"></i></a></li>
                         <li class="list-item"><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
                         <li class="list-item"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Suche</a></li>
-                        
+                        <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
                         <li class="list-item dropdown_profile"><a href="#"><i class="fa-solid fa-user"></i>Mein Profil</a>
                             <div class="dropdown-content">
-                                <a href="listings.html">Meine Unterkünfte</a>
+                                <a href="#">Meine Unterkünfte</a>
                             </div>
                         </li>
-                        <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,47 +41,14 @@
         </header>
 
         <main>
-            <div class="columns">
-                <div class="col">
-                    <h1 class="centered">Profil bearbeiten</h1>
-                        
-                        <div class="columns">
-                            <div class="col">
-                                <label>Vorname</label>
-                                <input type="text" name="firstName" id="editFirstName" value="">
-                            </div>
-                            <div class="col">
-                                <label>Nachname</label>
-                                <input type="text" name="lastName" id="editLastName" value="">
-                            </div>
-                        </div>
-            
-                        <div class="columns">
-                            <div class="col">
-                                <label>Email</label>
-                                <input type="email" name="email" id="editEmail" value="">
-                            </div>
-                            <div class="col">
-                                <label>Passwort</label>
-                                <input type="password" name="password" id="editPassword" value="">
-                            </div>        
-                        </div>
-            
-                        <div class="centered">
-                            <a href="#" id="editUser" class="btn">Speichern</a>
-                        </div>
 
-                </div>
+            <div>
+                <form method="get" action="/listings/load">
+                    
+                </form>
             </div>
 
         </main>
-
-        <footer>
-            <ul class="footer-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </footer>
     </body>
+
 </html>
